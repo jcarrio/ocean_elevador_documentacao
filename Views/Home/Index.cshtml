@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3>Projeto Elevador - Documentação</h3>
+</div>
+</br>
+Ao iniciar o Projeto Elevador, serão feitas duas perguntas ao usuário: Capacidade do elevador, e Total de andares.</br>
+Após o usuário informar as respostas, serão apresentadas as informações do elevador, e um menu para que seja informada</br>
+qual ação deverá ser executada, como no exemplo abaixo:</br>
+</br>
+<pre>
+    Capacidade do elevador: 5
+    Total de andares: 10
+    Pessoas no elevador: 0
+    Andar atual: 0
+
+    1 - Entrar
+    2 - Sair
+    3 - Subir
+    4 - Descer
+    5 - Fechar
+
+
+    Informe a ação:
+</pre>
+Sempre que o usuário informar a ação 1, para entrar no elevador, será acrescentada uma pessoa ao elevador, até que o</br>
+número de pessoas no elevador alcance a capacidade máxima do elevador. Assim que o número de pessoas alcance a capacidade</br>
+máxima, será exibida uma mensagem de erro, conforme o exemplo abaixo:</br>
+</br>
+<pre>
+    Capacidade do elevador: 5
+    Total de andares: 10
+    Pessoas no elevador: 5
+    Andar atual: 0
+
+    1 - Entrar
+    2 - Sair
+    3 - Subir
+    4 - Descer
+    5 - Fechar
+
+    Erro: Elevador já está cheio
+    Informe a ação: 1
+</pre>
+Quando o usuário informar a ação 2, para sair do elevador, será realizada a saída de uma pessoa do elevador, até que o</br>
+número de pessoas no elevador chegue a zero. Caso seja informada a ação de sair e a quantidade de pessoas no elevador</br>
+esteja zerada, será exibida uma mensagem de erro, conforme o exemplo abaixo:</br>
+</br>
+<pre>
+    Capacidade do elevador: 5
+    Total de andares: 10
+    Pessoas no elevador: 0
+    Andar atual: 0
+
+    1 - Entrar
+    2 - Sair
+    3 - Subir
+    4 - Descer
+    5 - Fechar
+
+    Erro: Elevador já está vazio
+    Informe a ação: 2
+</pre>
+Quando o usuário informar a ação 3, para subir um andar, será realizado um acrésimo no andar atual, até que o andar atual</br>
+chegue ao total de andares. Caso o elevador esteja no último andar e seja informada a ação subir, será exibida uma mensagem</br>
+de erro, conforme o exemplo abaixo:</br>
+</br>
+<pre>
+    Capacidade do elevador: 5
+    Total de andares: 10
+    Pessoas no elevador: 5
+    Andar atual: 10
+
+    1 - Entrar
+    2 - Sair
+    3 - Subir
+    4 - Descer
+    5 - Fechar
+
+    Erro: Elevador já está no último andar
+    Informe a ação: 3
+</pre>
+Quando o usuário informar a ação 4, para descer um andar, será realizado um decréscimo no andar atual, até que o andar atual</br>
+chegue ao andar térreo. Caso o elevador esteja no andar térreo e seja informada a ação descer, será exibida uma mensagem de</br>
+erro, conforme o exemplo abaixo:</br>
+</br>
+<pre>
+    Capacidade do elevador: 5
+    Total de andares: 10
+    Pessoas no elevador: 0
+    Andar atual: 0
+
+    1 - Entrar
+    2 - Sair
+    3 - Subir
+    4 - Descer
+    5 - Fechar
+
+    Erro: Elevador já está no térreo
+    Informe a ação: 4
+</pre>
+Quando o usuário informar a ação 5, fechar o programa Elevador, o sistema será encerrado.</br>
